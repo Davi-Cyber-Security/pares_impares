@@ -7,8 +7,8 @@ void main()
     int numerosPares = 0, numerosImpares = 0;
     
     while(1){
-        for(int i = 0; i <= 10; i++){
-            printf("Digite um numero de até %d: ", i);
+        for(int i = 1; i <= 10; i++){
+            printf("Digite um numero de %d até 10: ", i);
             while(scanf("%d", &numeros[i]) != 1){
                 printf("Digite somente números.\n\n");
                 while(getchar() != '\n');
@@ -16,7 +16,7 @@ void main()
         }
         
         printf("\n\nOs três primeiros 3 números pares são: ");
-        for(int i = 0; i < 10; i++){
+        for(int i = 1; i < 10; i++){
             if(numeros[i] %2==0){
                 printf("%d ", numeros[i]);
                 numerosPares++;
